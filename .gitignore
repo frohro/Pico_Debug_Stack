@@ -1,0 +1,52 @@
+# KiCad - Temporary and Backup Files
+*.bak
+*.bck
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*-backups/
+*_autosave.kicad_sch
+*_autosave.kicad_pcb
+*.tmp
+*.csv
+*.xml
+*.rpt
+*.net
+*.drills.rlx
+
+# Local cache
+fp-info-cache
+
+# Build artifacts (if you generate them locally)
+/Gerber*
+/plot/
+/production/
+# KiCad Lock files (prevent "Project already open" warnings)
+*.lck
+~*
+# Ignore Local User Settings (Zoom level, active layer, etc.)
+*.kicad_prl
+
+# Ignore Cache
+fp-info-cache
+fp-lib-table.backup
+
+# --- Generated Outputs (Optional) ---
+# It is usually best to ignore these so you don't commit old versions of gerbers.
+# You should generate these fresh when you are ready to manufacture.
+/Gerber*
+/Plot/
+/Drill/
+*.net
+*.rpt
+*.xml
+*.csv
+*.svg
+*.dxf
+
+# --- OS Specific (Good practice for any repo) ---
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Mac
+.DS_Store
