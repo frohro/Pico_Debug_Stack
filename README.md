@@ -51,7 +51,7 @@ The **Target Pico's USB data lines (D+/D-)** are **NOT** routed through the stac
 To use this board, the onboard RP2354s must be flashed with the following firmware:
 
 *   **Logic Analyzer (U1):** [Download Dr. Gusman's LogicAnalyzer Firmware](https://github.com/gusmanb/logicanalyzer) Ensure you use the RP2350 build for this board.  Instead of shorting GPIO0 and GPIO1 to do burst capture, GPIO30 is connected to GPIO29.  These are  settings in the LogicAnalyzer_BoardSettings.h.  I will put the .uF2 file for this LogicAnalyzer on GitHub.
-*   **Debug Probe (U2):** [Download Yapicoprobe Firmware](https://github.com/rppicomidi/yapicoprobe) (or the official Raspberry Pi `debugprobe` firmware).  
+*   **Debug Probe (U2):** [Download Yapicoprobe Firmware](https://github.com/rgrr/yapicoprobe) (or the official Raspberry Pi `debugprobe` firmware).  
 
 ## Using the Stimulus Features
 
