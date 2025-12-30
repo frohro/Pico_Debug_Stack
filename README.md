@@ -1,24 +1,12 @@
-Based on the schematic, netlist, and BOM provided, I have revised the `Pico_Development_Stack.md` file.
-
-**Significant Changes Made:**
-1.  **Chip Model Update:** Updated the MCU reference from **RP2350B** to **RP2354B**. The BOM specifies the `RP2354B`, which includes **2MB of internal stacked flash**. This is a significant hardware detail as it eliminates the need for external flash chips on the analyzer/probe sections.
-2.  **USB Hub Details:** Clarified the USB Hub (GL850G) connectivity. The board includes a **stacked USB-A connector (J10)**, providing *two* downstream ports. This allows the user to patch the Target Pico's USB data lines back into the system if needed.
-3.  **Power Supply:** Added a note about the **2A Buck Converter (MT2492)**, which ensures robust power for the stack and the target device.
-4.  **DUT USB Clarification:** Added a critical note that the **Target Pico's USB data lines are NOT passed through the headers**. Users must use a patch cable from the auxiliary ports if they need USB data connectivity to the Target Pico.
-
-Here is the revised file content:
-
----
-
-# Raspberry Pi Pico Development Stack
+# Raspberry Pi Pico Debug Stack
 
 **A professional-grade hardware interposer for debugging, analyzing, and validating Raspberry Pi Pico projects.**
-
+![](Pico_Debug_Stack_20251229184213993.png)
 ![Project Status](https://img.shields.io/badge/Status-Prototype-orange) ![License](https://img.shields.io/badge/License-MIT-green)
 
 ## Overview
 
-The **Pico Development Stack** is a "Man-in-the-Middle" development tool designed to eliminate the wiring mess typically associated with hardware debugging.
+The **Pico Debug Stack** is a "Man-in-the-Middle" Debug tool designed to eliminate the wiring mess typically associated with hardware debugging.
 
 It acts as a hardware shim:
 1.  Unplug your **Target Pico (DUT)** from your project motherboard.
@@ -62,8 +50,8 @@ The **Target Pico's USB data lines (D+/D-)** are **NOT** routed through the stac
 
 To use this board, the onboard RP2354s must be flashed with the following firmware:
 
-*   **Logic Analyzer (U1):** [Download Dr. Gusman's LogicAnalyzer Firmware](https://github.com/gusmanb/logicanalyzer) (Ensure you use the RP2350 build).
-*   **Debug Probe (U2):** [Download Yapicoprobe Firmware](https://github.com/rppicomidi/yapicoprobe) (or the official Raspberry Pi `debugprobe` firmware).
+*   **Logic Analyzer (U1):** [Download Dr. Gusman's LogicAnalyzer Firmware](https://github.com/gusmanb/logicanalyzer) Ensure you use the RP2350 build for this board.  Instead of shorting GPIO0 and GPIO1 to do burst capture, GPIO30 is connected to GPIO29.  These are  settings in the LogicAnalyzer_BoardSettings.h.  I will put the .uF2 file for this LogicAnalyzer on GitHub.
+*   **Debug Probe (U2):** [Download Yapicoprobe Firmware](https://github.com/rppicomidi/yapicoprobe) (or the official Raspberry Pi `debugprobe` firmware).  
 
 ## Using the Stimulus Features
 

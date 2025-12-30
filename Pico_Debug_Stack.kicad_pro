@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.92,
-          "height": 1.5,
-          "width": 1.5
+          "drill": 0.3,
+          "height": 0.6,
+          "width": 0.6
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -58,7 +58,76 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "courtyards_overlap|109445000|116185000|892127ab-627a-4ce2-9c08-f8e3ca852595|aa92d0ed-fe1e-4db7-9248-bf9da564a5bf",
+          ""
+        ],
+        [
+          "silk_edge_clearance|111570000|59315000|1da84369-c418-4d2b-80e6-cee772228af6|ad5afafa-e503-45ad-b832-9c3f9c237ccd",
+          ""
+        ],
+        [
+          "silk_edge_clearance|114170000|59315000|1da84369-c418-4d2b-80e6-cee772228af6|479e84c1-3710-4360-8fa1-4b2da614ab52",
+          ""
+        ],
+        [
+          "silk_edge_clearance|99970000|59315000|1da84369-c418-4d2b-80e6-cee772228af6|32e992a7-21fb-43b3-81fb-7574b8431cfa",
+          ""
+        ],
+        [
+          "silk_over_copper|103940000|123733000|b3b65621-2d6b-48f9-9b24-23d34a701c6a|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "silk_over_copper|105499047|117230000|08dbd86f-a998-4f84-bb87-efe4d5b1be79|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "silk_over_copper|116519612|134594612|600f436b-a49d-4f62-9915-854cae2cfd1e|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "silk_overlap|101320000|104825000|5b819c9c-7f38-4221-b4ee-5f6c6e779ecc|b3b65621-2d6b-48f9-9b24-23d34a701c6a",
+          ""
+        ],
+        [
+          "silk_overlap|116560000|111869985|600f436b-a49d-4f62-9915-854cae2cfd1e|da022faa-52a8-4842-83ef-7d9176868a73",
+          ""
+        ],
+        [
+          "silk_overlap|119100000|104825000|600f436b-a49d-4f62-9915-854cae2cfd1e|f65da67c-e34a-4dd0-9dc9-31ad66feb524",
+          ""
+        ],
+        [
+          "starved_thermal|102670000|136565000|ac5a89d0-4e92-4a5b-9483-d7ea30ddf25a|209f1fb1-1cf0-4f9f-a515-f8859f408062|B.Cu",
+          ""
+        ],
+        [
+          "starved_thermal|109632144|155047144|ac5a89d0-4e92-4a5b-9483-d7ea30ddf25a|7ca85ef5-284c-4826-b3b9-e125086cb248|F.Cu",
+          ""
+        ],
+        [
+          "starved_thermal|117830000|111175000|ac5a89d0-4e92-4a5b-9483-d7ea30ddf25a|60aaf5ed-9ee9-4e80-8b27-8e52566516ab|F.Cu",
+          ""
+        ],
+        [
+          "starved_thermal|99357857|148582857|ac5a89d0-4e92-4a5b-9483-d7ea30ddf25a|197b77ec-7f5e-4420-8903-e7693baa4315|F.Cu",
+          ""
+        ],
+        [
+          "track_dangling|105200000|90170000|701412bb-5dcb-43f2-8acc-dc78d5099237|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "track_dangling|116888500|118761756|3a244984-edec-4d10-a61a-3ec149dd7033|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "via_dangling|104220000|148565000|705e0985-6eb2-408c-8ba8-e96a36e5aee7|00000000-0000-0000-0000-000000000000",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -139,7 +208,7 @@
         "min_track_width": 0.0,
         "min_via_annular_width": 0.1,
         "min_via_diameter": 0.5,
-        "solder_mask_to_copper_clearance": 0.0,
+        "solder_mask_to_copper_clearance": 0.005,
         "use_height_for_length_calcs": true
       },
       "teardrop_options": [
@@ -756,7 +825,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "Gerbers_Pico_Debug_Stack",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
@@ -1152,6 +1221,30 @@
           "group_by": false,
           "label": "Field6",
           "name": "Field6",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "NetClass",
+          "name": "NetClass",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Diode Configuration",
+          "name": "Diode Configuration",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "JLCPCB",
+          "name": "JLCPCB",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Field7",
+          "name": "Field7",
           "show": false
         }
       ],
