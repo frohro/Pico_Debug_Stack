@@ -18,7 +18,7 @@ With a single USB connection to your PC, you instantly gain access to a full sui
 ## Key Features
 
 *   **Integrated Logic Analysis:** Onboard **RP2354B** (with 2MB internal flash) running **[Dr. Gusman's Logic Analyzer](https://github.com/gusmanb/logicanalyzer)**. Capable of capturing high-speed signals (SPI, I2C, UART, I2S) from the DUT.
-*   **Integrated Debug Probe:** Onboard **RP2354B** (with 2MB internal flash) running **[Yapicoprobe](https://github.com/rppicomidi/yapicoprobe)** (compatible with standard CMSIS-DAP/Picoprobe). Provides SWD debugging (Step, Pause, Breakpoints) and a UART console.
+*   **Integrated Debug Probe:** Onboard **RP2354B** (with 2MB internal flash) running **[Yapicoprobe](https://github.com/rgrr/yapicoprobe)** (compatible with standard CMSIS-DAP/Picoprobe). Provides SWD debugging (Step, Pause, Breakpoints) and a UART console.
 *   **Hardware Stimulus:** The Debug Probe is hardwired to the DUT's GPIOs via protection resistors, allowing you to inject signals or simulate sensors programmatically.
 *   **Integrated USB Hub:** An onboard **GL850G USB Hub** manages all devices via a single USB-C connection. It provides:
     *   Internal link to the Logic Analyzer.
