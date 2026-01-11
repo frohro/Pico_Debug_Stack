@@ -817,6 +817,14 @@
       {
         "netclass": "1V1",
         "pattern": "+3*"
+      },
+      {
+        "netclass": "1V1",
+        "pattern": "+1V1_U1"
+      },
+      {
+        "netclass": "1V1",
+        "pattern": "+1V1_U2"
       }
     ]
   },
